@@ -1,14 +1,7 @@
 name: Addic7ed
 on:
   push:
-    branches:
-      - master
-    paths:
-      - '.github/workflows/cron-tests-addic7ed.yml'
-  schedule:
-    - cron:  '0 7 * * *'
-  workflow_dispatch: ~
-
+    branches: [main]
 jobs:
   tests:
     runs-on: ubuntu-latest
